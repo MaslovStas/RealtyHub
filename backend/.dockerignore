@@ -1,0 +1,23 @@
+# Исключаем виртуальное окружение
+.venv/
+# Исключаем временные файлы и артефакты
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+# Исключаем файлы конфигурации IDE
+.idea/
+.vscode/
+# Исключаем файлы пакета и логи
+.env
+.env.test
+Dockerfile
+README.md
+ruff.toml
+:memory
+*.log
+*.egg-info/
+dist/
+build/
+# Исключаем файлы тестов, если они не нужны
+tests/

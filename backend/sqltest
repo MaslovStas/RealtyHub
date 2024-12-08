@@ -1,4 +1,0 @@
-SELECT *
-FROM realtys as r
-LEFTJOIN user_realty_favorites as f ON r.id = f.realty_id
-ORDER BY r.id;
