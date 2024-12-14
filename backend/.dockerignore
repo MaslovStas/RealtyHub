@@ -9,8 +9,6 @@ __pycache__/
 .idea/
 .vscode/
 # Исключаем файлы пакета и логи
-.env
-.env.test
 Dockerfile
 README.md
 ruff.toml
