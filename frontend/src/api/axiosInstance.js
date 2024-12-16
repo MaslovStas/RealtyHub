@@ -6,7 +6,8 @@ import {
 	NotAuthenticated,
 } from "@/api/apiError";
 
-const baseURL = "http://127.0.0.1:8000";
+const baseURL =
+	process.env.VUE_APP_API_BASE_URL || "http://backend:8000";
 
 const addAutorizationHeader = config => {
 	const accessToken = localStorage.getItem("accessToken");

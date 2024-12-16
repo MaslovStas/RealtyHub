@@ -11,13 +11,14 @@ app.include_router(router_realty, prefix="/realtys")
 app.include_router(router_auth, prefix="/auth/jwt")
 app.include_router(router_user, prefix="/users")
 
-origins = [
-    "http://localhost:8080",
-]
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=origins,
+    allow_origins=[
+        "http://localhost:8080",
+        "http://127.0.0.1:8080",
+        "http://frontend:8080",
+    ],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
